@@ -20,11 +20,12 @@ if (peso < 0 || peso > 1000) {
     pesoEhValido = false;
 }
 
-if(altura < 0 || altura > 3.00){
+if (altura < 0 || altura > 3.00) {
     console.log("Altura inválida!");
     alturaEhValida = false;
 }
 
-
-var imc = peso / (altura * altura); // 100/2.2*2.2= 100/4 = 25
-tdImc.textContent = imc;
+if (alturaEhValida && pesoEhValido) {
+    var imc = peso / (altura * altura); // 100/2.2*2.2= 100/4 = 25
+    tdImc.textContent = imc;
+}
