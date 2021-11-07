@@ -41,4 +41,8 @@ for (var i = 0; i < pacientes.length; i++) {
     }
 }
 
-titulo.addEventListener("click");
+titulo.addEventListener("click", mostraMensagem);
+
+function mostraMensagem(){
+    console.log("Olá, eu clicado!");
+}
