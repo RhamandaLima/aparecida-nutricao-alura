@@ -41,8 +41,10 @@ for (var i = 0; i < pacientes.length; i++) {
     }
 }
 
-titulo.addEventListener("click", mostraMensagem);
+titulo.addEventListener("click", function(){
+    console.log("Olá, posso chamar uma função anonima.");
+});
 
-function mostraMensagem(){
+/*function mostraMensagem(){
     console.log("Olá, eu clicado!");
-}
+}*/
