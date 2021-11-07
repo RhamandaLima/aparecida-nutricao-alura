@@ -41,9 +41,8 @@ for (var i = 0; i < pacientes.length; i++) {
     }
 }
 
-titulo.addEventListener("click", function(){
-    console.log("Olá, posso chamar uma função anonima.");
-});
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+
 
 /*function mostraMensagem(){
     console.log("Olá, eu clicado!");
