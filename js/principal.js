@@ -44,7 +44,8 @@ for (var i = 0; i < pacientes.length; i++) {
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click", function(Event) {
     Event.preventDefault();
-    console.log("Oi, eu sou o botao e fui clicado")
+    
+    var form = document.querySelector("");
 })
 
 /*function mostraMensagem(){
