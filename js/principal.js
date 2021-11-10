@@ -52,10 +52,7 @@ botaoAdicionar.addEventListener("click", function(event) {
     var altura = form.altura.value;
     var gordura = form.gordura.value;
 
-    console.log(nome);
-    console.log(peso);
-    console.log(altura);
-    console.log(gordura);
+    var pacienteTr = document.createElement("tr");
 });
 
 /*function mostraMensagem(){
