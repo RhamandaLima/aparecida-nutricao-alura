@@ -13,6 +13,8 @@ botaoAdicionar.addEventListener("click", function(event) {
 
     var erros = validaPaciente(paciente);
 
+    console.log(erros);
+
     if(erros.length > 0){
         exibeMensagensDeErro(erros);
         return;
@@ -79,6 +81,10 @@ function validaPaciente(paciente){
 
     var erros = [];
 
+    if(paciente.nome.length == 0){
+        erros.push("O nome não pode ser em branco.");
+    }
+
     if(!validaPeso(paciente.peso)){
         erros.push("Peso é inválido!");
     } 
@@ -86,6 +92,10 @@ function validaPaciente(paciente){
     if(!validaAltura(paciente.altura)){
         erros.push("Altura é inválida!");
     } 
+
+    if(paciente.gordura.length == 0){
+        erros.push("A gordura não pode ser em branco.")
+    }
 
     return erros;
 }
