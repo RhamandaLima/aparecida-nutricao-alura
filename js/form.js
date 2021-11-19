@@ -59,5 +59,7 @@ function montaTd(dado,classe){
 }
 
 function validaPaciente(paciente){
-
+    if(){
+        return true;
+    }
 }
