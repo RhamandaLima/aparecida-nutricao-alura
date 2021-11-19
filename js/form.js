@@ -11,7 +11,7 @@ botaoAdicionar.addEventListener("click", function(event) {
     console.log(paciente);
 
     //Cria a tr e a td do paciente
-    var pacienteTr = document.createElement("tr");
+    
 
     var nomeTd = document.createElement("td");
     var pesoTd = document.createElement("td");
@@ -52,4 +52,8 @@ function obtemPacienteDoFormulario(form){
     }
 
     return paciente;
+}
+
+function montaTr(paciente){
+    var pacienteTr = document.createElement("tr");
 }
