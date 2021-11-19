@@ -70,8 +70,13 @@ function validaPaciente(paciente){
 
     var erros = [];
 
-    if(!validaPeso(paciente.peso)) erros.push("Peso é inválido!"); 
-    if(!validaAltura(paciente.altura)) erros.push("Altura é inválida!"); 
+    if(!validaPeso(paciente.peso)){
+        erros.push("Peso é inválido!");
+    } 
+
+    if(!validaAltura(paciente.altura)){
+        erros.push("Altura é inválida!");
+    } 
 
     return erros;
 }
