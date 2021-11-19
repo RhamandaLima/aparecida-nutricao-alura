@@ -34,9 +34,9 @@ botaoAdicionar.addEventListener("click", function(event) {
 function exibeMensagensDeErro(erros){
     var ul = document.querySelector("#mensagens-erro");
 
-    for(var i = 0; i < erros.length; i++){
-        var erro = erros[i];
-    }
+    erros.forEach(function(){
+        var li = document.createElement("li");
+    })
 }
 
 function obtemPacienteDoFormulario(form){
