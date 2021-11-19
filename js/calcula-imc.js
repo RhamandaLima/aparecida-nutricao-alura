@@ -21,21 +21,20 @@ for (var i = 0; i < pacientes.length; i++) {
     if (!pesoEhValido) {
         console.log("Peso inválido");
         pesoEhValido = false;
-        tdPeso.textContent = "Peso inválido!";
+        tdImc.textContent = "Peso inválido!";
         paciente.classList.add("paciente-invalido");
     }
 
     if (!alturaEhValida) {
         console.log("Altura inválida!");
         alturaEhValida = false;
-        tdAltura.textContent = "Altura inválida!";
+        tdImc.textContent = "Altura inválida!";
         paciente.classList.add("paciente-invalido");
     }
 
     if (alturaEhValida && pesoEhValido) {
         var imc = calculaImc(peso, altura);
         tdImc.textContent = imc;
-
     }
 }
 
