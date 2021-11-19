@@ -11,11 +11,10 @@ botaoAdicionar.addEventListener("click", function(event) {
     //Cria a tr e a td do paciente
     var pacienteTr = montaTr(paciente);    
 
-    var erro = validaPaciente(paciente);
+    var erros = validaPaciente(paciente);
 
-    if(erro.length > 0){
-        var mensagemErro = document.querySelector("#mensagem-erro");
-        mensagemErro.textContent = erro;
+    if(erros.length > 0){
+        exibeMensagensDeErro(erros);
         return;
     }
 
