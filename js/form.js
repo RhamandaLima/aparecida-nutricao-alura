@@ -40,12 +40,14 @@ function montaTr(paciente){
 
     var nomeTd = document.createElement("td");
     nomeTd.classList.add("info-nome");
+    nomeTd.textContent = paciente.nome;
+
     var pesoTd = document.createElement("td");
     var alturaTd = document.createElement("td");
     var gorduraTd = document.createElement("td");
     var imcTd = document.createElement("td");
 
-    nomeTd.textContent = paciente.nome;
+    
     pesoTd.textContent = paciente.peso;
     alturaTd.textContent = paciente.altura;
     gorduraTd.textContent = paciente.gordura;
@@ -58,4 +60,8 @@ function montaTr(paciente){
     pacienteTr.appendChild(imcTd);
 
     return pacienteTr;
+}
+
+function montaTd(paciente){
+    var td = document.createElement("td");
 }
