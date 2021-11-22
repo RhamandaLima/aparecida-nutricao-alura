@@ -10,7 +10,9 @@ campoFiltro.addEventListener("input", function(){
         var nome = paciente.textContent; 
 
         if(nome != this.value){
-            paciente.classList.add(".invisivel");
+            paciente.classList.add("invisivel");
+        } else {
+            paciente.classList.remove("invisivel");
         }
     }
 
