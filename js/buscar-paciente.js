@@ -21,7 +21,7 @@ botaoAdicionar.addEventListener("click", function () {
         } else {
             console.log(xhr.status);
             console.log(xhr.responseText);
-           
+
             erroAjax.classList.remove("invisivel");
         }
     });

@@ -32,6 +32,10 @@ header .container:before{
 	vertical-align:	middle;
 }
 
+.invisivel {
+	display: none;
+}
+
 .container{
 	width: 60%;
 	height: 100%;
@@ -49,6 +53,12 @@ section h2{
 	padding-bottom: .5em;
 	border-bottom: 1px solid #ccc;
 	margin-bottom: .5em;
+}
+
+#filtrar-tabela {
+	width: 200px;
+	height: 35px;
+	margin-bottom: 10px;
 }
 
 table{
@@ -144,14 +154,4 @@ button[disabled=disabled], button:disabled {
 .fadeOut{
 	opacity: 0;
 	transition: 0.5s;
-}
-
-#filtrar-tabela {
-	width: 200px;
-	height: 35px;
-	margin-bottom: 10px;
-}
-
-.invisivel {
-	display: none;
 }
